@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Details</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+         <h1 class="text-5xl font-semibold text-center mt-12">Let's Get Some <span class="font-bold text-violet-900">Money</span></h1>
+    </header>
+    <main>
+        <section class="grid grid-cols-3 gap-4 mt-12  w-9/12  mx-auto ">
+            <div class="bg-blue-700 text-center p-8 rounded-lg">
+                <h2 class="text-3xl font-semibold mb-2 text-white">Deposit</h2>
+                <h4 class="text-6xl text-white">$<span id="deposit">00</span></h4>
+            </div>
+            <div class="bg-cyan-600 text-center p-8 rounded-lg">
+                <h2 class="text-3xl font-semibold mb-2 text-white">Withdrawal</h2>
+                <h4 class="text-6xl text-white">$<span id="withdraw"> 00</span>
+            </div>
+            <div class="bg-pink-900 text-center p-8 rounded-lg">
+                <h2 class="text-3xl font-semibold mb-2 text-white">Total Amount</h2>
+                <h4 class="text-6xl text-white">$<span id="total-amount">240</span></h4>
+            </div>
+        </section>
+        <section class="grid grid-cols-2 gap-4 mt-12  w-9/12  mx-auto ">
+            <div class="bg-violet-600 text-center p-8 rounded-lg">
+                <h2 class="text-3xl font-semibold mb-2 text-white">Enter Deposit Amount</h2>
+                <input type="" name="" id="deposit-field" class="w-96 block mt-5 mx-auto p-2 rounded-sm" placeholder="Please Enter The Amount">
+                <button class="text-black block mx-auto mt-8 bg-amber-300 px-8 py-2 font-bold text-xl rounded-sm hover:text-black hover:bg-white " id="deposit-btn">Deposit</button>
+            </div>
+            <div class="bg-indigo-800 text-center p-8 rounded-lg">
+                <h2 class="text-3xl font-semibold mb-2 text-white">Enter Withdrawal Amount</h2>
+                <input type="" name="" id="withdraw-field" class="w-96 block mt-5 mx-auto p-2 rounded-sm" placeholder="Please Enter The Withdrawal Amount">
+                <button class="text-black block mx-auto mt-8 bg-amber-300 px-8 py-2 font-bold text-xl rounded-sm hover:text-black hover:bg-white " id="withdrawl-btn">Withdraw</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="bank.js"></script>
+    <script src="withdraw.js"></script>
+</body>
+</html>
